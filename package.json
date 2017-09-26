@@ -1,0 +1,22 @@
+{
+  "name": "plugin-sign-default",
+  "version": "1.0.0",
+  "description": "Default Signer plugin handler",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paritytech/plugin-sign-default.git"
+  },
+  "keywords": [
+    "Parity"
+  ],
+  "author": "Parity Technologies <admin@parity.io>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/paritytech/plugin-sign-default/issues"
+  },
+  "homepage": "https://github.com/paritytech/plugin-sign-default#readme"
+}
