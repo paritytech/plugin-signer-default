@@ -14,11 +14,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import Layout from './ui/Layout';
+
 export default function Request ({ className, date, gasLimit, isFocussed, isSending, netVersion, onConfirm, onReject, payload, origin }) {
   const transaction = payload.sendTransaction || payload.signTransaction;
 
   return (
-    <div />
+    <Layout>
+      <Layout.Main>This is the default request handler, not much to see here</Layout.Main>
+      <Layout.Side>Sidebar</Layout.Side>
+    </Layout>
   );
 }
 
