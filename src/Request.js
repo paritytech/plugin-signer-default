@@ -14,20 +14,28 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Layout from './ui/Layout';
+import SignerLayout from '@parity/ui/Signer/Layout';
+import TransactionMainDetails from '@parity/ui/Signer/TransactionMainDetails';
 
-export default function Request ({ className, date, gasLimit, isFocussed, isSending, netVersion, onConfirm, onReject, payload, origin }) {
+export default function Request ({ accounts, className, date, gasLimit, isFocussed, isSending, netVersion, onConfirm, onReject, payload, origin }) {
   const transaction = payload.sendTransaction || payload.signTransaction;
 
+  // return (
+  //   <SignerLayout className={ className }>
+  //     <SignerLayout.Main>This is the default request handler, not much to see here</SignerLayout.Main>
+  //     <SignerLayout.Side>Sidebar</SignerLayout.Side>
+  //   </SignerLayout>
+  // );
+
   return (
-    <Layout className={ className }>
-      <Layout.Main>This is the default request handler, not much to see here</Layout.Main>
-      <Layout.Side>Sidebar</Layout.Side>
-    </Layout>
+    <SignerLayout className={ className }>
+      <TransactionMainDetails />
+    </SignerLayout>
   );
 }
 
 Request.propTypes = {
+  accounts: PropTypes.object.isRequired,
   className: PropTypes.string,
   date: PropTypes.instanceOf(Date).isRequired,
   gasLimit: PropTypes.object.isRequired,
