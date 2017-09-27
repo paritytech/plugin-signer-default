@@ -16,5 +16,6 @@
 */
 
 .main {
-  color: inherit;
+  flex: 1;
+  overflow: auto;
 }

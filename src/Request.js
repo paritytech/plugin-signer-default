@@ -20,7 +20,7 @@ export default function Request ({ className, date, gasLimit, isFocussed, isSend
   const transaction = payload.sendTransaction || payload.signTransaction;
 
   return (
-    <Layout>
+    <Layout className={ className }>
       <Layout.Main>This is the default request handler, not much to see here</Layout.Main>
       <Layout.Side>Sidebar</Layout.Side>
     </Layout>
