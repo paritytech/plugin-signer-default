@@ -17,6 +17,10 @@
 import Request from './Request';
 import isHandler from './query';
 
+if (typeof window === 'undefined' || typeof window.parity === 'undefined' || typeof window.parity.extendShell !== 'function') {
+  throw new Error('Unable unable to register Parity Signer plugin, the window.parity.extendShell function is not exposed.');
+}
+
 window.parity.extendShell({
   type: 'signer',
   component: Request,
