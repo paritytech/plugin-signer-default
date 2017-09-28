@@ -17,7 +17,7 @@ import PropTypes from 'prop-types';
 import SignerLayout from '@parity/ui/Signer/Layout';
 import TransactionMainDetails from '@parity/ui/Signer/TransactionMainDetails';
 
-export default function Request ({ accounts, className, date, gasLimit, isFocussed, isSending, netVersion, onConfirm, onReject, payload, origin }) {
+export default function Request ({ accounts, className, date, gasLimit, id, isFocussed, isSending, netVersion, onConfirm, onReject, payload, origin }) {
   const transaction = payload.sendTransaction || payload.signTransaction;
 
   // return (
@@ -39,6 +39,7 @@ Request.propTypes = {
   className: PropTypes.string,
   date: PropTypes.instanceOf(Date).isRequired,
   gasLimit: PropTypes.object.isRequired,
+  id: PropTypes.object.isRequired,
   isFocussed: PropTypes.bool,
   isSending: PropTypes.bool.isRequired,
   netVersion: PropTypes.string.isRequired,
