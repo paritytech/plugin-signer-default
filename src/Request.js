@@ -14,23 +14,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import SignerLayout from '@parity/ui/Signer/Layout';
-import TransactionMainDetails from '@parity/ui/Signer/TransactionMainDetails';
+import ConfirmViaKey from '@parity/ui/Signer/ConfirmViaKey';
+import SignerRequest from '@parity/ui/Signer/Request';
 
 export default function Request ({ accounts, className, date, gasLimit, id, isFocussed, isSending, netVersion, onConfirm, onReject, payload, origin }) {
-  const transaction = payload.sendTransaction || payload.signTransaction;
-
-  // return (
-  //   <SignerLayout className={ className }>
-  //     <SignerLayout.Main>This is the default request handler, not much to see here</SignerLayout.Main>
-  //     <SignerLayout.Side>Sidebar</SignerLayout.Side>
-  //   </SignerLayout>
-  // );
-
   return (
-    <SignerLayout className={ className }>
-      <TransactionMainDetails />
-    </SignerLayout>
+    <SignerRequest
+      accounts={ accounts }
+      className={ className }
+      confirmElement={ ConfirmViaKey }
+      date={ date }
+      gasLimit={ gasLimit }
+      id={ id }
+      isFocussed={ isFocussed }
+      isSending={ isSending }
+      netVersion={ netVersion }
+      onConfirm={ onConfirm }
+      onReject={ onReject }
+      origin={ origin }
+      payload={ payload }
+    />
   );
 }
 

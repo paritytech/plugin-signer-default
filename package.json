@@ -1,5 +1,5 @@
 {
-  "name": "@parity/plugin-sign-default",
+  "name": "@parity/plugin-signer-default",
   "version": "1.0.0",
   "description": "Default Signer plugin handler",
   "main": "src/index.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/paritytech/plugin-sign-default.git"
+    "url": "git+https://github.com/paritytech/plugin-signer-default.git"
   },
   "keywords": [
     "Parity"
@@ -17,9 +17,9 @@
   "author": "Parity Technologies <admin@parity.io>",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/paritytech/plugin-sign-default/issues"
+    "url": "https://github.com/paritytech/plugin-signer-default/issues"
   },
-  "homepage": "https://github.com/paritytech/plugin-sign-default#readme",
+  "homepage": "https://github.com/paritytech/plugin-signer-default#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-eslint": "^8.0.1",
