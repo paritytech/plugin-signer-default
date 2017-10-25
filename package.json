@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/paritytech/plugin-signer-default#readme",
   "devDependencies": {
+    "@parity/ui": "^2",
     "babel-cli": "^6.26.0",
     "babel-eslint": "^8.0.1",
     "babel-loader": "^7.1.2",
@@ -67,7 +68,5 @@
     "url-loader": "^0.5.9",
     "webpack": "^3.6.0"
   },
-  "dependencies": {
-    "@parity/ui": "^2"
-  }
+  "dependencies": {}
 }
