@@ -40,16 +40,6 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        include: /node_modules\/@parity/,
-        use: [ {
-          loader: 'happypack/loader',
-          options: {
-            id: 'babel'
-          }
-        } ]
-      },
-      {
-        test: /\.js$/,
         exclude: /node_modules/,
         use: [ {
           loader: 'happypack/loader',

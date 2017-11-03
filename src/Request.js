@@ -14,8 +14,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import ConfirmViaKey from '@parity/ui/Signer/ConfirmViaKey';
-import SignerRequest from '@parity/ui/Signer/Request';
+import ConfirmViaKey from '@parity/ui/lib/Signer/ConfirmViaKey';
+import SignerRequest from '@parity/ui/lib/Signer/Request';
 
 export default function Request ({ accounts, className, date, gasLimit, id, isFocussed, isSending, netVersion, onConfirm, onReject, payload, origin }) {
   return (
