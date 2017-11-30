@@ -29,9 +29,9 @@ module.exports = {
     dist: './index.js'
   },
   output: {
-    path: path.join(__dirname, 'dist'),
-    publicPath: 'dist/',
-    filename: '../dist.js'
+    path: path.join(__dirname, 'build'),
+    publicPath: '',
+    filename: 'dist.js'
   },
   externals: {
     react: 'React'

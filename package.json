@@ -1,8 +1,8 @@
 {
   "name": "@parity/plugin-signer-default",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Default Signer plugin handler",
-  "main": "src/index.js",
+  "main": "dist.js",
   "scripts": {
     "build": "NODE_ENV=production webpack --colors --progress",
     "lint": "npm run lint:css && npm run lint:js",
@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/paritytech/plugin-signer-default#readme",
   "devDependencies": {
-    "@parity/ui": "2.2.x",
+    "@parity/ui": "3.0.x",
     "babel-cli": "^6.26.0",
     "babel-eslint": "^8.0.1",
     "babel-loader": "^7.1.2",
