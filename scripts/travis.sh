@@ -52,10 +52,8 @@ git remote set-url origin https://${GH_TOKEN}@github.com/js-dist-${TRAVIS_REPO_S
 git checkout $TRAVIS_BRANCH
 
 echo "Copying build output"
-rm -rf build static
 cp -rf ../build/* .
-cp -f ../icon.png ../package.json .
-sed "s/VERSION/$PACKAGE_VERSION/" < ../manifest.json >manifest.json
+cp -f ../package.json .
 
 echo "Adding to git"
 echo "$VERSION" >README.md
