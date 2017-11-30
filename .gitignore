@@ -1,6 +1,7 @@
 build
 .build
 .happypack
+package-lock.json
 
 # Logs
 logs
