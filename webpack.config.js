@@ -22,7 +22,7 @@ const isProd = process.env.NODE_ENV === 'production';
 
 module.exports = {
   devtool: isProd
-    ? '#source-map'
+    ? false
     : '#eval',
   context: path.join(__dirname, 'src'),
   entry: {
