@@ -22,6 +22,10 @@ git config merge.ours.driver true
 git config user.name "Travis CI"
 git config user.email "$COMMIT_AUTHOR_EMAIL"
 git remote set-url origin https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git > /dev/null 2>&1
+
+echo "Adding files to GitHub"
+
+git checkout $TRAVIS_BRANCH
 git add .
 
 echo "Bumping package version"
