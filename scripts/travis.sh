@@ -57,7 +57,7 @@ cp -f ../package.json .
 
 echo "Adding to git"
 echo "$VERSION" >README.md
-git add .
+git add --all .
 git commit -m "$VERSION"
 git push --quiet origin HEAD:refs/heads/$TRAVIS_BRANCH > /dev/null 2>&1
 cd ..

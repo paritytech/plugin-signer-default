@@ -31,7 +31,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'build'),
     publicPath: '',
-    filename: 'dist.js'
+    filename: 'index.js'
   },
   externals: {
     react: 'React'
