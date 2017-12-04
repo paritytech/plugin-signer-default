@@ -122,9 +122,9 @@
     useragent.js "^0.5.6"
     yargs "6.6.0"
 
-"@parity/ui@3.0.x":
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/@parity/ui/-/ui-3.0.2.tgz#7562531c01766e18e402a16f539d297d453001d2"
+"@parity/ui@^3.0.5":
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/@parity/ui/-/ui-3.0.5.tgz#530ad003567f8c7364fbfdf3ed6b50939d2d7f1b"
   dependencies:
     "@parity/api" "2.1.x"
     "@parity/etherscan" "2.1.x"
